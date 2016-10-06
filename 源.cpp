@@ -1,18 +1,18 @@
 #include<iostream>
 using namespace std;
 
-//¾ßÌå²úÉúÊ½Îª factor = (expr)  | digit
+//å…·ä½“äº§ç”Ÿå¼ä¸º                                   factor = (expr)  | digit
 //						term = term * factor| term / factor | factor
 //						expr = expr + term |expr - term | term
-//ÓÉÓÚÒÔÉÏ²úÉúÊ½Îª×óµİ¹éµÄ¹ØÏµ£¬»á²úÉúÎŞÏŞÑ­»·£¬¸ù¾İÊ½×Ó A->A¦Á | ¦Â;
-//																						   	   A->¦ÂR;
-//																							   R->¦ÁR | ¦Å;
-//½«Ö®×ª»»ÎªÏàÓ¦µÄÓÒµİ¹éµÄ·Ö½â
+//ç”±äºä»¥ä¸Šäº§ç”Ÿå¼ä¸ºå·¦é€’å½’çš„å…³ç³»ï¼Œä¼šäº§ç”Ÿæ— é™å¾ªç¯ï¼Œæ ¹æ®å¼å­ A->AÎ± | Î²;
+//					            A->Î²R;
+//						    R->Î±R | Îµ;																							   R->Î±R | Îµ;
+//å°†ä¹‹è½¬æ¢ä¸ºç›¸åº”çš„å³é€’å½’çš„åˆ†è§£
 //term->factor restTerm;
 //restTerm -> *factor restTerm
 //restTerm-> \factor restTerm
-//restTerm->¦Å
-//ÁíÍâÒ»¸öÊ½×Ó·Ö½âÍ¬Àí
+//restTerm->Îµ
+//å¦å¤–ä¸€ä¸ªå¼å­åˆ†è§£åŒç†
 																							
 class Parser
 {
