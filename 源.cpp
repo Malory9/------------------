@@ -10,7 +10,7 @@ using namespace std;
 //将之转换为相应的右递归的分解
 //term->factor restTerm;
 //restTerm -> *factor restTerm
-//restTerm-> \factor restTerm
+//restTerm-> /factor restTerm
 //restTerm->ε
 //另外一个式子分解同理
 																							
